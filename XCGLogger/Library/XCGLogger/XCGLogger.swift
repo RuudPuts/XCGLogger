@@ -849,3 +849,13 @@ public class XCGLogger: CustomDebugStringConvertible {
 public func < (lhs:XCGLogger.LogLevel, rhs:XCGLogger.LogLevel) -> Bool {
     return lhs.rawValue < rhs.rawValue
 }
+
+// Extensions
+
+extension String {
+    
+    public var lastPathComponent: String {
+        return (self as NSString).lastPathComponent
+    }
+    
+}
